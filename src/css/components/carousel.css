@@ -88,3 +88,22 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 .carousel__container {
   scroll-behavior: smooth;
 }
+
+/* Boutons gauche/droite posés sur le carrousel */
+.carousel {
+  position: relative;
+}
+.carousel__controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  justify-content: space-between;
+  pointer-events: none; /* laisse passer le scroll/clic vers les images entre les boutons */
+}
+.carousel__button {
+  pointer-events: auto;
+  background: white;
+  cursor: pointer;
+}
