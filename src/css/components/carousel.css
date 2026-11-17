@@ -75,3 +75,16 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
     flex-basis: 25vw;
   }
 }
+
+/* Liste d'ancres vers les items */
+.carousel__anchors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+.carousel__container {
+  scroll-behavior: smooth;
+}
